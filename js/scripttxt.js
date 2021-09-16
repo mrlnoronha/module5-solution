@@ -8,7 +8,7 @@
         document
         .getElementById("contentname")
         .innerHTML = message;
-        return name;
+  
         
 
     }
@@ -33,16 +33,19 @@
         return pais;
 
     }
-
     function parasaber(){
         console.log(Event);
+        var name = document.getElementById("name").value;
+        var pais = document.getElementById("pais").value;
+        var idade = document.getElementById("idade").value;
+        var message = "<h2>" + name + " você é do " + pais + " ,com " + idade + 
+        " anos, descobriu um novo amor, e o seu amor é o Márcio Noronha</h2>";
+        
         if (name === "Thais"){
-
-            var message = "<h2>" + name + " você é do " + country + ", e o seu amor é o Márcio Noronha</h2>";
-            document
-            .getElementById("islove")
+            document.getElementById("islove")
             .innerHTML = message;
 
         }
     }
+
 
